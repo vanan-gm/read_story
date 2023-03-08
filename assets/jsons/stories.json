@@ -1,0 +1,75 @@
+[
+  {
+    "id": "62ddac19-14f9-42aa-a012-2fea4cdd5942",
+    "name": "The Witcher #0.5 - The Last Wish",
+    "image": "https://hachette.imgix.net/books/9781473231061.jpg?auto=compress",
+    "description": "Geralt xứ Rivia là một witcher. Một pháp sư mưu mẹo. Một sát thủ tàn nhẫn. Và một kẻ giết người máu lạnh. Mục đích duy nhất của anh: tiêu diệt những con quái vật đang hoành hành khắp thế giới. Nhưng không phải mọi thứ gớm ghiếc đều là cái ác và mọi thứ đẹp đẽ đều là cái thiện...và trong mỗi câu truyện cổ tích luôn ẩn giấu một chút sự thật.",
+    "categoryId": "52cb7c1b-76db-495e-8975-dd113e749259",
+    "chapters": [
+      {
+        "id": "",
+        "chapterTitle": "",
+        "content": ""
+      },
+      {
+        "id": "",
+        "chapterTitle": "",
+        "content": ""
+      },
+      {
+        "id": "",
+        "chapterTitle": "",
+        "content": ""
+      }
+    ]
+  },
+  {
+    "id": "618e215c-1a18-46ce-b5f8-b9c1463d0c2d",
+    "name": "The Witcher #0.75 - Sword of Destiny",
+    "image": "https://m.media-amazon.com/images/I/51ei8hZYUmL.jpg",
+    "description": "Geralt là một witcher, một người với sức mạnh phép thuật, được tăng cường thể chất bằng những năm tháng khổ luyện và thần dược bí ẩn, khiến anh trở thành một chiến binh dũng mãnh và một sát thủ tàn nhẫn. Tuy vậy anh không phải là một kẻ giết người tầm thường: mục tiêu của anh là những con quái vật và ác quỷ xấu xa đang hoành hành khắp thế giới và tấn công những người vô tội.",
+    "categoryId": "52cb7c1b-76db-495e-8975-dd113e749259",
+    "chapters": [
+      {
+        "id": "",
+        "chapterTitle": "",
+        "content": ""
+      },
+      {
+        "id": "",
+        "chapterTitle": "",
+        "content": ""
+      },
+      {
+        "id": "",
+        "chapterTitle": "",
+        "content": ""
+      }
+    ]
+  },
+  {
+    "id": "d9236c71-5b4c-4f3e-89ec-2d8cc5866b74",
+    "name": "The Witcher #1 - Blood of Elves",
+    "image": "https://m.media-amazon.com/images/I/51iPnjuiKuS.jpg",
+    "description": "Trong vòng hơn một thế kỷ, con người, người lùn, gnome, và elves đã chung sống trong hòa bình. Nhưng thời thế đã thay đổi, hòa bình đã chấm dứt, và các chủng tộc giờ đây lại xung đột lẫn nhau. Dường như một gã elf tốt là một gã elf đã chết. Geralt xứ Rivia, sát thủ mưu mẹo được biết đến là Witcher, đã chờ đợi sự ra đời của đứa trẻ trong lời tiên tri. Đứa trẻ này có sức mạnh thay đổi cả thế giới - dù tốt, hay xấu. Trong khi nguy cơ chiến tranh treo trên toàn vùng đất và đứa trẻ bị săn lùng vì sức mạnh phi thường của mình, trách nhiệm của Geralt sẽ là bảo vệ tất cả - và witcher chưa bao giờ chấp nhận thất bại.",
+    "categoryId": "52cb7c1b-76db-495e-8975-dd113e749259",
+    "chapters": [
+      {
+        "id": "",
+        "chapterTitle": "",
+        "content": ""
+      },
+      {
+        "id": "",
+        "chapterTitle": "",
+        "content": ""
+      },
+      {
+        "id": "",
+        "chapterTitle": "",
+        "content": ""
+      }
+    ]
+  }
+
+]

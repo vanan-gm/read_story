@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
 
+import 'package:read_story/constant/constants.dart';
+
 class AppConstants{
   AppConstants._();
 
@@ -25,6 +27,7 @@ class AppConstants{
   static const double iconSizeHuge = 40;
 
   // Paddings
+  static double paddingZero = AppConstants.width * .0;
   static double paddingTiny = AppConstants.width * .005;
   static double paddingSmallest = AppConstants.width * .01;
   static double paddingSmall = AppConstants.width * .02;
