@@ -1,0 +1,1 @@
+export 'package:read_story/enums/page_transition_type.dart';
