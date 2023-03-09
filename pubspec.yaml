@@ -9,10 +9,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
   cupertino_icons: ^1.0.2
   google_fonts: ^4.0.3
   provider: ^6.0.5
   hive: ^2.2.3
+  lottie: ^2.2.0
+  intl: ^0.17.0
+  shared_preferences: ^2.0.18
 
 dev_dependencies:
   flutter_test:
@@ -21,8 +26,10 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  generate: true # Add this line
 
   assets:
    - assets/icons/
    - assets/images/
    - assets/jsons/
+   - assets/lotties/

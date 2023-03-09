@@ -1,0 +1,1 @@
+export 'package:read_story/ui/screens/splash_screen/splash_screen.dart';

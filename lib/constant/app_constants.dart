@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
 
-import 'package:read_story/constant/constants.dart';
-
 class AppConstants{
   AppConstants._();
 
@@ -57,5 +55,11 @@ class AppConstants{
   // Others
   static const double buttonHeight = 50.0;
   static const double letterSpacingDefault = .004;
+
+  // Keys
+  static const String api_key = 'api_key';
+  static const String language_code = 'language_code';
+  static const String language_name = 'language_name';
+  static const String email = 'email';
 
 }

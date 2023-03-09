@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:read_story/config/config.dart';
 import 'package:read_story/constant/constants.dart';
-import 'package:read_story/ui/widgets/widgets.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 abstract class BaseScreen extends StatefulWidget{
   const BaseScreen({Key? key}) : super(key: key);
@@ -17,7 +17,7 @@ abstract class BaseScreenState<Page extends BaseScreen> extends State<Page>{
 
   bool isUsingAppBar() => true;
 
-  Widget appBarTitle() => Text('Undefined', style: AppStyles.textLexend());
+  Widget appBarTitle() => Text(AppLocalizations.of(context).undefined, style: AppStyles.textLexend());
 
   bool isCenterAppBar() => true;
 
@@ -44,7 +44,8 @@ abstract class BaseScreenState<Page extends BaseScreen> extends State<Page>{
 
   Color leadingWidgetColor() => AppColors.black;
 
-  Widget leadingWidget() => RippleEffect(
+  Widget leadingWidget() => CupertinoButton(
+    padding: EdgeInsets.all(AppConstants.paddingZero),
     onPressed: () => Navigator.of(context).maybePop(),
     child: Icon(
       isAndroid ? Icons.keyboard_backspace_rounded : CupertinoIcons.back,
@@ -54,16 +55,21 @@ abstract class BaseScreenState<Page extends BaseScreen> extends State<Page>{
 
   void initStateBase() => (){};
   void disposeStateBase() => (){};
+  void buildUICompleted() => (){};
 }
 
 mixin Screen<Page extends BaseScreen> on BaseScreenState<Page>{
   late double width;
   late double height;
+  late AppLocalizations appString;
 
   @override
   void initState() {
     super.initState();
     initStateBase();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      buildUICompleted();
+    });
   }
 
   @override
@@ -78,6 +84,7 @@ mixin Screen<Page extends BaseScreen> on BaseScreenState<Page>{
   Widget build(BuildContext context) {
     width = MediaQuery.of(context).size.width;
     height = MediaQuery.of(context).size.height;
+    appString = AppLocalizations.of(context);
     return GestureDetector(
       onTap: () => FocusScope.of(context).unfocus(),
       child: isUsingAppBar() ? Scaffold(
