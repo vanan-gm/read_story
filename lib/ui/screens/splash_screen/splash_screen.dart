@@ -52,6 +52,7 @@ class _SplashScreenState extends BaseScreenState<SplashScreen> with Screen{
     // }else{
     //   print('Done');
     // }
+    _insertCategory();
     _insertStory();
   }
 
