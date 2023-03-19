@@ -1,0 +1,5 @@
+
+class HiveRepository{
+  HiveRepository._();
+
+}

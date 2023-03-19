@@ -61,5 +61,9 @@ class AppConstants{
   static const String language_code = 'language_code';
   static const String language_name = 'language_name';
   static const String email = 'email';
+  static const String save_hive_data = 'save_hive_data';
+  static const String collection_name = 'story_collection';
+  static const String story_box = 'story_box';
+  static const String category_box = 'category_box';
 
 }

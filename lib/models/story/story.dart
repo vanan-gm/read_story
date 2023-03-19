@@ -46,3 +46,46 @@ class Story extends HiveObject{
     if(createdAt != null) 'createdAt': createdAt,
   };
 }
+
+class StoryAdapter extends TypeAdapter<Story>{
+  @override
+  Story read(BinaryReader reader) {
+    var numOfFields = reader.readByte();
+    var fields = <int, dynamic>{
+      for (var i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
+    };
+    return Story(
+      id: fields[0] as String,
+      name: fields[1] as String,
+      image: fields[2] as Uint8List,
+      description: fields[3] as String,
+      categoryId: fields[4] as String,
+      chapters: fields[5] as List<Chapter>,
+      createdAt: fields[6] as int,
+    );
+  }
+
+  @override
+  int get typeId => 2;
+
+  @override
+  void write(BinaryWriter writer, Story obj) {
+    writer
+      ..writeByte(7)
+      ..writeByte(0)
+      ..write(obj.id)
+      ..writeByte(1)
+      ..write(obj.name)
+      ..writeByte(2)
+      ..write(obj.image)
+      ..writeByte(3)
+      ..write(obj.description)
+      ..writeByte(4)
+      ..write(obj.categoryId)
+      ..writeByte(5)
+      ..write(obj.chapters)
+      ..writeByte(6)
+      ..write(obj.createdAt);
+  }
+
+}

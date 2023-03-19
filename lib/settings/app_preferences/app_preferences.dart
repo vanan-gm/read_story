@@ -15,9 +15,13 @@ class AppPreferences{
 
   static String get languageName => _get<String>(AppConstants.language_name);
 
+  static bool get saveHiveData => _get<bool>(AppConstants.save_hive_data);
+
   static set languageCode(String languageCode) => _put(AppConstants.language_code, languageCode);
 
   static set languageName(String languageName) => _put(AppConstants.language_name, languageName);
+
+  static set saveHiveData(bool saveData) => _put<bool>(AppConstants.save_hive_data, saveData);
 
   /// Put method for SharedPreferences
   static Future<void> _put<T>(String key, dynamic value) async{
